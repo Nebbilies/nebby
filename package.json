@@ -8,6 +8,12 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
+		"@iconify/icons-arcticons": "^1.2.70",
+		"@iconify/icons-cib": "^1.2.4",
+		"@iconify/icons-logos": "^1.2.36",
+		"@iconify/icons-mdi": "^1.2.47",
+		"@iconify/icons-simple-icons": "^1.2.71",
+		"@iconify/svelte": "^3.1.4",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"autoprefixer": "^10.4.16",
