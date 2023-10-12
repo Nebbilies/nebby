@@ -102,7 +102,7 @@
         </div>
         <ul class="navigation">
             <li>
-                <a href="./">Works</a>
+                <a href="./works" target="_self">Works</a>
             </li>
         </ul>
 </div>

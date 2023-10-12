@@ -136,7 +136,7 @@
             </li>
             <li>
                 <div class="text-7xl fade-five">
-                    <a href="/about">
+                    <a href="/about" target="_self">
                         <Icon icon={aboutMe}
                               class="w-full h-full text-neutral-400 transition duration-300 hover:text-white"/>
                     </a>
