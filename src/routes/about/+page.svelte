@@ -1,14 +1,24 @@
 <script>
-
+    import {onMount} from "svelte";
     import Icon from '@iconify/svelte';
     import facebookIcon from '@iconify/icons-mdi/facebook';
     import twitterIcon from '@iconify/icons-mdi/twitter';
-    import steamIcon from '@iconify/icons-mdi/steam';
-    import twitchIcon from '@iconify/icons-mdi/twitch';
-    import osuIcon from '@iconify/icons-simple-icons/osu';
-    import myanimelistIcon from '@iconify/icons-simple-icons/myanimelist';
-    import blueArchive from '@iconify/icons-arcticons/blue-archive';
-    import aboutMe from '@iconify/icons-cib/about-me';
+    onMount(() => {
+    function reveal() {
+        const reveals = document.querySelectorAll(".reveal");
+        for (let i = 0; i < reveals.length; i++) {
+            const windowHeight = window.innerHeight;
+            const elementTop = reveals[i].getBoundingClientRect().top;
+            const elementVisible = 150;
+            if (elementTop < windowHeight - elementVisible) {
+                reveals[i].classList.add("active");
+                reveals[i].classList.remove("hide");
+            }
+        }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+    });
 </script>
 <style>
     .header {
@@ -79,10 +89,15 @@
         border-radius: 7px;
     }
 
-    .banner {
-        width: 100%;
-        height: 500px;
-        overflow:hidden;
+    :global(.reveal){
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 2s all ease;
+    }
+    :global(.reveal.active){
+        transform: translateY(0);
+        opacity: 1;
     }
 
     .titleName {
@@ -93,6 +108,21 @@
         color: white;
         font-size: 50px;
         text-shadow: 2px 2px 4px #000000;
+    }
+
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .moveUpDown {
+        animation: moveUpDown 4s ease-in-out infinite;
     }
 </style>
 
@@ -124,12 +154,12 @@
         </div>
     </div>
     <div class="flex max-w-screen justify-center items-center">
-        <img src="/uit.jpg" alt="UIT" class="rounded-lg shadow-2xl">
+        <img src="/uit.jpg" alt="UIT" class="rounded-lg shadow-2xl moveUpDown scale-95">
     </div>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-2 justify-center items-center min-w-screen relative content-center mt-32">
+<div class="reveal transition duration-2000 grid grid-cols-1 lg:grid-cols-2 justify-center items-center min-w-screen relative content-center mt-32">
     <div class="flex max-w-screen justify-center items-center">
-        <img src="/maimaiTourney.jpg" alt="maimaiTourney" class="rounded-lg border-2 border-white shadow-2xl w-5/6">
+        <img src="/maimaiTourney.jpg" alt="maimaiTourney" class="rounded-lg border-2 border-white shadow-2xl w-5/6 moveUpDown">
     </div>
     <div class="flex flex-col text-[#fff] p-4 md:pr-8 mt-8 lg:mt-0 tracking-wide align-middle text-left">
         <div class="text-4xl font-bold text-center lg:text-left">Personality & Hobbies</div>
@@ -148,11 +178,11 @@
         I'm single.
     </div>
 </div>
-<div class="w-screen flex justify-center flex-col items-center min-w-screen w-screen mt-8 opacity-100">
+<div class="flex justify-center flex-col items-center max-w-screen w-screen mt-8 opacity-100">
     <hr class="border-gray-500 border-1 rounded w-[300px]">
 </div>
 <div class="mt-8 mb-16">
-    <ul class="flex flex-col md:flex-row gap-10 items-center justify-center">
+    <ul class="flex-wrap flex md:flex-row gap-10 items-center justify-center">
         <li>
             <div class="text-4xl">
                 <a href="https://twitter.com/NebbyFour" target="_blank">
