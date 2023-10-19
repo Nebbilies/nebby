@@ -73,6 +73,20 @@
     .hr-line {
         animation: scaleUp 1.5s ease-in-out 3s 1;
     }
+    @keyframes moveUpDown {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-15px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .moveUpDown {
+        animation: moveUpDown 4s ease-in-out infinite;
+    }
 </style>
 
 
@@ -82,7 +96,7 @@
             <div class="w-full h-full select-none animate-none">
                 <img
                         src="/nebby.png" alt="Nebby Logo"
-                        class="w-full h-full object-fill rounded fade-normal"
+                        class="w-full h-full object-fill rounded fade-normal moveUpDown"
                 >
             </div>
             <div class="text-3xl text-center font-medium tracking-wider fade-normal">
@@ -94,11 +108,11 @@
             </div>
         </div>
     </div>
-    <div class="justify-center flex flex-col w-[350px] opacity-100">
+    <div class="justify-center flex flex-col w-[300px] opacity-100">
         <hr class="w-full border-white-400 border-[1px] rounded"/>
     </div>
     <div>
-        <ul class="flex flex-col md:flex-row gap-10 items-center justify-center">
+        <ul class="flex-wrap flex md:flex-row gap-10 items-center justify-center">
             <li>
                 <div class="text-4xl fade-one">
                     <a href="https://twitter.com/NebbyFour" target="_blank">
@@ -115,12 +129,12 @@
                 </div>
             </li>
             <li>
-                <div class="w-12 h-12">
+                <div class="w-10 h-10">
                     <a href="https://maimaidx-eng.com/maimai-mobile/friend/search/searchUser/?friendCode=8064894684537"
                        target="_blank"><img
                             src="/maimai.png"
                             alt="maimai"
-                            class="grayscale w-full h-full rounded border-pink-1300 fade-three"
+                            class="grayscale w-full h-full rounded border-pink-1300 fade-three brightness-[0.7]"
 
                     />
                     </a>
@@ -135,7 +149,7 @@
                 </div>
             </li>
             <li>
-                <div class="text-7xl fade-five">
+                <div class="text-6xl fade-five">
                     <a href="/about" target="_self">
                         <Icon icon={aboutMe}
                               class="w-full h-full text-neutral-400 transition duration-300 hover:text-white"/>
@@ -151,7 +165,7 @@
                 </div>
             </li>
             <li>
-                <div class="text-4xl fade-three">
+                <div class="text-[33px] fade-three">
                     <a href="https://osu.ppy.sh/users/10635981" target="_blank">
                         <Icon icon={osuIcon}
                               class="w-full h-full text-neutral-400 transition duration-300 hover:text-white"/>
