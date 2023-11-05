@@ -125,6 +125,9 @@
     }
 </style>
 
+<head>
+    <title>About</title>
+</head>
 <div class="header">
         <div class="button">
             <a href="./" ><span>Back</span></a>
@@ -137,7 +140,7 @@
 </div>
 <div class="flex relative items-center text-4xl justify-center w-screen mt-24 mb-16 font-extrabold">
     <div class="titleName">
-        Hi, I'm <span class="text-red-300">Nebby</span>
+        Hi, I'm <span class="text-red-300">Nebby.</span>
     </div>
 </div>
 <div class="w-screen flex justify-center flex-col items-center min-w-screen w-screen mb-16 opacity-100">
@@ -164,10 +167,10 @@
         <div class="text-4xl font-bold text-center lg:text-left">Personality & Hobbies</div>
         <div class="text-xl mt-8 leading-8">
             <div>
-                Introversion has always been my downside, but, I'm also really easygoing, friendly and open to people. I'd love to make new friends but thing is I'm that one guy who's always hesitant to start the conversation. However, I've always been very energetic in my friend group. My free time hobbies are mostly watching anime, reading manga, and playing games. I'm also a fan of <span class="text-green-200 font-bold">Hololive</span> and <span class="text-red-200 font-bold">Love Live!</span> series.
+                Introversion has always been my downside, but, I'm also really easygoing, friendly and open to people. I'd love to make new friends but thing is I'm that one guy who's always hesitant to start the conversation. However, I've always been very energetic in my friend group. My free time hobbies are mostly watching anime, reading manga, and playing games. I'm also a fan of a few <span class="text-green-200 font-bold">Slice of Life</span> and <span class="text-red-200 font-bold">Romcom</span> anime series.
             </div>
             <div class="mt-2">
-                I'm still kinda active in the <span class="text-pink-200 font-bold">osu!</span> community.  However, <span class="text-blue-200 font-bold text-2xl">maimai</span> at the moment is my main hobby. I've participated in hosting and playing a few tournaments. I'm also a <span class="text-yellow-200 font-bold">maimai custom charter</span> <span class="text-sm"> (open to receive commissions at a small price)</span>. Hope you guys can check out. ❤
+                I'm still kinda active in the <span class="text-pink-200 font-bold">osu!</span> community.  However, <span class="text-blue-200 font-bold text-2xl">maimai</span> at the moment is my main hobby. I've participated in hosting and playing a few tournaments. I'm also a <span class="text-yellow-200 font-bold">maimai custom charter</span>. Hope you guys can check out. ❤
             </div>
         </div>
     </div>

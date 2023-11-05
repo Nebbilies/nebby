@@ -89,6 +89,9 @@
     }
 </style>
 
+<head>
+    <title>Works</title>
+</head>
 <div class="header">
     <div class="button">
         <a href="./" ><span>Back</span></a>
@@ -107,8 +110,11 @@
         (These charts are NOT official, and serve as entertainment purposes only.)
     </div>
 </div>
-<div class="w-screen flex justify-center flex-col items-center min-w-screen w-screen mb-16 opacity-100">
+<div class="w-screen flex justify-center flex-col items-center min-w-screen w-screen mb-6 opacity-100">
     <hr class="border-gray-500 border-1 rounded w-[300px]">
+</div>
+<div class="flex w-screen justify-center items-center min-w-screen mb-6">
+    <div class="text-xl">Commission Status: <span class="font-bold text-green-500">OPEN</span></div>
 </div>
 <div class="pl-16 pr-16 gap-8 grid grid-rows-2 grid-cols-1 lg:grid-cols-2 justify-center relative items-center min-w-screen content-center">
     <a href="https://www.facebook.com/100014579646085/videos/1536211657193777/">

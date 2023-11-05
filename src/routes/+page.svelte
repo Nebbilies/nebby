@@ -88,7 +88,9 @@
         animation: moveUpDown 4s ease-in-out infinite;
     }
 </style>
-
+<head>
+    <title>Nebby</title>
+</head>
 
 <div class="flex flex-col min-h-screen justify-center items-center px-12 md:px-24 py-16 gap-10">
     <div class="w-full max-w-5xl flex flex-col justify-center items-center">
